@@ -25,9 +25,9 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
 //                    | MED | SPC | TAB |   | ENT | BSP  | DEL |
                         bindings = <
-   &kp TAB   &kp Q       &kp W      &kp E       &kp R        &kp T       &kp Y &kp U         &kp I        &kp O      &kp P          &kp BSPC
-   &kp LCTRL &mt LMETA A &mt LALT S &mt LCTRL D &mt LSHIFT F &kp G       k&kp H &mt RSHIFT J  &mt RCTRL K  &mt RALT L &mt LMETA SEMI &kp SQT
-   &kp LSHFT &kp Z       &kp X      &kp C       &kp V        &kp B       &kp N &kp M         &kp COMMA    &kp DOT    &kp FSLH       &kp RSHFT
+   &kp TAB   &kp Q       &kp W      &kp E       &kp R        &kp T       &kp Y        &kp U         &kp I        &kp O      &kp P          &kp BSPC
+   &kp LCTRL &mt LMETA A &mt LALT S &mt LCTRL D &mt LSHIFT F &kp G       &kp H       &mt RSHIFT J  &mt RCTRL K  &mt RALT L &mt LMETA SEMI &kp SQT
+   &kp LSHFT &kp Z       &kp X      &kp C       &kp V        &kp B       &kp N        &kp M         &kp COMMA    &kp DOT    &kp FSLH       &kp RSHFT
                     &lt MEDIA ESC &lt NAV SPACE &kp TAB      &lt SYM RET &lt NUM SPC    &lt FUN BSPC
                         >;
                 };
