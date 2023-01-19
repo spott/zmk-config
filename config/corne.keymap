@@ -13,8 +13,28 @@
 #define NUM 3
 #define SYM 4
 #define FUN 5
+#define U_TAPPING_TERM 200
 
 / {
+      behaviors {
+          u_mt: u_mt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "u_mt";
+            #binding-cells = <2>;
+            tapping_term_ms = <U_TAPPING_TERM>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+          };
+          u_lt: u_lt {
+            compatible = "zmk,behavior-hold-tap";
+            label = "u_lt";
+            #binding-cells = <2>;
+            tapping_term_ms = <U_TAPPING_TERM>;
+            flavor = "tap-preferred";
+            bindings = <&mo>, <&kp>;
+          };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -25,10 +45,10 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | SHFT |
 //                    | MED | SPC | TAB |   | ENT | BSP  | DEL |
                         bindings = <
-   &kp TAB   &kp Q       &kp W      &kp E       &kp R        &kp T       &kp Y        &kp U         &kp I        &kp O      &kp P          &kp BSPC
-   &kp LCTRL &mt LMETA A &mt LALT S &mt LCTRL D &mt LSHIFT F &kp G       &kp H       &mt RSHIFT J  &mt RCTRL K  &mt RALT L &mt LMETA SEMI &kp SQT
-   &kp LSHFT &kp Z       &kp X      &kp C       &kp V        &kp B       &kp N        &kp M         &kp COMMA    &kp DOT    &kp FSLH       &kp RSHFT
-                    &lt MEDIA ESC &lt NAV SPACE &kp TAB      &lt SYM RET &lt NUM SPC    &lt FUN BSPC
+   &kp TAB   &kp Q         &kp W      &kp E       &kp R        &kp T       &kp Y        &kp U         &kp I        &kp O      &kp P          &kp BSPC
+   &kp LCTRL &u_mt LMETA A &u_mt LALT S &u_mt LCTRL D &u_mt LSHIFT F &kp G       &kp H       &u_mt RSHIFT J  &u_mt RCTRL K  &u_mt RALT L &u_mt LMETA SEMI &kp SQT
+   &kp LSHFT &kp Z         &kp X      &kp C       &kp V        &kp B       &kp N        &kp M         &kp COMMA    &kp DOT    &kp FSLH       &kp RSHFT
+                      &u_lt MEDIA ESC &u_lt NAV SPACE &kp TAB      &u_lt SYM RET &u_lt NUM SPC    &u_lt FUN BSPC
                         >;
                 };
                 media_layer {
