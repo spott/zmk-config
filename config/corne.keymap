@@ -38,9 +38,9 @@
 // | SHFT |     |     |     |     |     |   |     |BTCLR | BT_0 | BT_1 | BT_2 |      |
 //                    |     |     |     |   | stop|play/p| mute |
                         bindings = <
-   &kp TAB    &none        &none        &none        &none       &none    &none       &none       &none           &none           &none         &none 
-   &kp LCTRL   &kp LMETA    &kp LALT     &kp LCTRL    &kp LSHIFT  &none    &none       &kp C_NEXT  &kp C_VOL_UP    &kp C_VOL_DOWN  &kp C_PREV    &none 
-   &kp LSHFT  &none        &none        &none        &none       &none    &none       &bt BT_CLR  &bt BT_SEL 0    %bt BT_SEL 1    &bt BT_SEL 2  &none 
+   &kp TAB     &none        &none        &none        &none       &none    &none       &none       &none           &none           &none         &none 
+   &kp LCTRL   &kp LMETA    &kp LALT     &kp LCTRL    &kp LSHIFT  &none    &none       &kp C_NEXT  &kp C_VOL_UP    &kp C_VOL_DN    &kp C_PREV    &none 
+   &kp LSHIFT  &none        &none        &none        &none       &none    &none       &bt BT_CLR  &bt BT_SEL 0    %bt BT_SEL 1    &bt BT_SEL 2  &none 
                           	            &none        &none       &none    &kp C_STOP  &kp C_PP  &kp K_MUTE 
                         >;
                 };
@@ -52,9 +52,9 @@
 // | SHFT |     |     |     |     |     |   | INS | HOME | PGDWN| PG_UP| END |      |
 //                    |     |     |     |   | ENT | BKSP| DEL |
                         bindings = <
-   &kp TAB    &none     &none    &none     &none      &none       &kp K_REDO   &kp K_PASTE &kp K_COPY   &kp K_CUT   &kp K_UNDO &none 
+   &kp TAB     &none     &none    &none     &none      &none       &kp K_REDO   &kp K_PASTE &kp K_COPY   &kp K_CUT   &kp K_UNDO &none 
    &kp LCTRL   &kp LMETA &kp LALT &kp LCTRL &kp LSHIFT &none       &kp LEFT     &kp DOWN    &kp UP       &kp RIGHT   &kp CAPS   &none 
-   &kp LSHFT  &none     &none    &none     &none      &none       &kp INS      &kp HOME    &kp PG_UP    &kp PG_DN   &kp END    &none 
+   &kp LSHIFT  &none     &none    &none     &none      &none       &kp INS      &kp HOME    &kp PG_UP    &kp PG_DN   &kp END    &none 
                              &none      &none        &none        &kp RET      &kp BSPC   &kp DEL 
                         >;
                 };
