@@ -40,8 +40,8 @@
                         bindings = <
    &kp TAB     &none        &none        &none        &none       &none    &none       &none       &none           &none           &none         &none 
    &kp LCTRL   &kp LMETA    &kp LALT     &kp LCTRL    &kp LSHIFT  &none    &none       &kp C_NEXT  &kp C_VOL_UP    &kp C_VOL_DN    &kp C_PREV    &none 
-   &kp LSHIFT  &none        &none        &none        &none       &none    &none       &bt BT_CLR  &bt BT_SEL 0    %bt BT_SEL 1    &bt BT_SEL 2  &none 
-                          	            &none        &none       &none    &kp C_STOP  &kp C_PP  &kp K_MUTE 
+   &kp LSHIFT  &none        &none        &none        &none       &none    &none       &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2  &none 
+                          	             &none        &none       &none    &kp C_STOP  &kp C_PP  &kp K_MUTE 
                         >;
                 };
 
